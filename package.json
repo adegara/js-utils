@@ -1,6 +1,6 @@
 {
     "name": "@adegara/js-utils",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "JavaScript utilities that complement Lodash",
     "repository": "git@github.com:adegara/js-utils.git",
     "author": "Ivan Semenikhin <semenihin.ivan@gmail.com>",

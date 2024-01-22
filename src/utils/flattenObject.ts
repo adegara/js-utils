@@ -1,4 +1,4 @@
-import { assign, isArray, isObject, transform } from 'lodash';
+import { assign, cloneDeep, isArray, isObject, transform } from 'lodash';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 type NotArrayOrObjectType = string | number | boolean | null | undefined | symbol | Function;
@@ -9,7 +9,7 @@ export function flattenObject<TOutput extends FlattenedObjectType = FlattenedObj
     prefix: string = '',
 ): TOutput {
     return transform(
-        obj,
+        cloneDeep(obj),
         (result: FlattenedObjectType, value, key) => {
             let newKey: string;
 
