@@ -1,4 +1,4 @@
 module.exports = {
-    "extends": "@semivan/eslint-config-ts",
-    "rules": {}
-}
+    extends: '@semivan/eslint-config-ts',
+    rules: {},
+};

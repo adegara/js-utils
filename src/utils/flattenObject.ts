@@ -6,7 +6,7 @@ type FlattenedObjectType = Record<string, NotArrayOrObjectType>;
 
 export function flattenObject<TOutput extends FlattenedObjectType = FlattenedObjectType>(
     obj: object,
-    prefix: string = '',
+    prefix = '',
 ): TOutput {
     return transform(
         cloneDeep(obj),
